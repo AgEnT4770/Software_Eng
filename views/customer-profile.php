@@ -13,15 +13,15 @@ $customer_email = isset($_SESSION['email']) ? $_SESSION['email'] : "customer@exa
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/edit_profile.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/edit_profile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="customer.php">Back</a></li>
+                <li><a href="../controller/customer.php">Back</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +29,7 @@ $customer_email = isset($_SESSION['email']) ? $_SESSION['email'] : "customer@exa
         <!-- Enhanced Glass Card Design -->
         <h1>Edit Profile</h1>
         <section class="temp">
-            <form id="edit-profile-form" method="POST" action="update-profile.php">
+            <form id="edit-profile-form" method="POST" action="../controller/update-profile.php">
                 <div class="form-group">
                     <label for="customer-name">Customer Name:</label>
                     <input type="text" id="customer-name" name="customer-name" value="<?php echo htmlspecialchars($customer_name); ?>" required>

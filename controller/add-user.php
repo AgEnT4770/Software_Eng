@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // Database connection
+include '../db.php'; // Database connection
 
 $error_message = "";
 $success_message = "";
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add User</title>
-    <link rel="stylesheet" href="css/mange_cust&mach.css">
+    <link rel="stylesheet" href="../css/mange_cust&mach.css">
 </head>
 <body>
     <main>

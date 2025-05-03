@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // Ensure this connects to your database
+include '../db.php'; // Ensure this connects to your database
 
 $error_message = ""; // Store error message for incorrect logins
 
@@ -29,9 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($role === "customer") {
                 header("Location: customer.php");
             } elseif ($role === "merchant") {
-                header("Location: merchant.html");
+                header("Location: ../views/merchant.html");
             } elseif ($role === "admin") {
-                header("Location: admin.php");
+                header("Location: ../views/admin.php");
             }
             exit();
         } else {
@@ -49,8 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Loyal</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>

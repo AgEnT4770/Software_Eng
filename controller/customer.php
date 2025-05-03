@@ -1,7 +1,7 @@
 <?php
 // Start session to manage logged-in customer data
 session_start();
-include 'db.php'; // Include database connection
+include '../db.php'; // Include database connection
 
 // Fetch the logged-in customer's username and subscription details
 $username = isset($_SESSION['username']) ? $_SESSION['username'] : "Customer";
@@ -21,8 +21,8 @@ $subscription = $result->fetch_assoc()['subscription'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/customer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/customer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
@@ -31,7 +31,7 @@ $subscription = $result->fetch_assoc()['subscription'];
         <nav>
             <div class="logo">Loyal</div>
             <ul>
-                <li><a href="index.html">Log out</a></li>
+                <li><a href="../index.html">Log out</a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +45,7 @@ $subscription = $result->fetch_assoc()['subscription'];
         <section id="profile-management">
             <h2>Profile Management</h2>
             <p>Level: Beginner | Points: 150</p>
-            <p><a href="customer-profile.php">Edit Profile Details</a></p>
+            <p><a href="../views/customer-profile.php">Edit Profile Details</a></p>
         </section>
 
         <!-- Points Accumulation Section -->
@@ -149,19 +149,19 @@ $subscription = $result->fetch_assoc()['subscription'];
 
         <!-- Value-Based System Section -->
         <section id="value-based-system">
-            <h2><a href="value-based-customer.html">Value-Based System</a></h2>
+            <h2><a href="../views/value-based-customer.html">Value-Based System</a></h2>
             <p>Donate points to charity organizations.</p>
         </section>
 
         <!-- Categories Section -->
         <section id="categories">
-            <h2><a href="offer-home.html">Categories</a></h2>
+            <h2><a href="../views/offer-home.html">Categories</a></h2>
             <p>Explore rewards in various categories.</p>
         </section>
 
         <!-- Offers Section -->
         <section id="offers">
-            <h2><a href="offer-home.html">Best Offers</a></h2>
+            <h2><a href="../views/offer-home.html">Best Offers</a></h2>
             <p>Check out the best offers from all categories.</p>
         </section>
     </main>

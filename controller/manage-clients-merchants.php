@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // Database connection
+include '../db.php'; // Database connection
 
 // Fetch customers and merchants
 $sql = "SELECT id, name, email, role FROM users WHERE role IN ('customer', 'merchant') ORDER BY role";
@@ -12,15 +12,15 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Clients & Merchants</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mange_cust&mach.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mange_cust&mach.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="admin.php">Back</a></li>
+                <li><a href="../views/admin.php">Back</a></li>
             </ul>
         </nav>
     </header>

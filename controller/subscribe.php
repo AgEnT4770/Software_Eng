@@ -1,6 +1,6 @@
 <?php
 session_start(); // Start session at the top
-include 'db.php'; // Include database connection
+include '../db.php'; // Include database connection
 
 // Ensure the customer is logged in
 if (!isset($_SESSION['username'])) {
