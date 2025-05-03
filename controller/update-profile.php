@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // Include database connection
+include '../db.php'; // Include database connection
 session_start(); // Start the session to access user data
 
 // Ensure the customer is logged in
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['email'] = $updated_email;
 
         // Redirect or show success message
-        echo "<script>alert('Profile updated successfully!'); window.location.href = 'customer.html';</script>";
+        echo "<script>alert('Profile updated successfully!'); window.location.href = 'customer.php';</script>";
     } else {
         echo "<script>alert('Error updating profile. Please try again later.');</script>";
     }

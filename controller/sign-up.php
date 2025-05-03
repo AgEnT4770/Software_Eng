@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // Include database connection
+include '../db.php'; // Include database connection
 session_start(); // Start session for logged-in user handling
 
 $error_message = ""; // Store error messages for duplicate users or other errors
@@ -35,9 +35,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($role === "customer") {
                 header("Location: customer.php");
             } elseif ($role === "merchant") {
-                header("Location: merchant.html");
+                header("Location: ../views/merchant.html");
             } elseif ($role === "admin") {
-                header("Location: admin.php");
+                header("Location: ../views/admin.php");
             }
             exit();
         } else {
@@ -53,8 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - Loyal</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>

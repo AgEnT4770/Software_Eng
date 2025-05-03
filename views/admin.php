@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
         <nav>
             <div class="logo">LOYAL</div>
             <ul>
-                <li><a href="login.php">Log out</a></li>
+                <li><a href="../controller/login.php">Log out</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +32,7 @@
         </section>
 
         <section id="manage-clients-merchants" class="glass-card">
-            <h2><a href="manage-clients-merchants.php">Manage Clients & Merchants</a></h2>
+            <h2><a href="../controller/manage-clients-merchants.php">Manage Clients & Merchants</a></h2>
             <p>Search, add, edit, or delete client and merchant accounts.</p>
         </section>
 

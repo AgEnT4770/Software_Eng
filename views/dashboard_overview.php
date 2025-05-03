@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // Include database connection
+include '../db.php'; // Include database connection
 session_start();
 
 // Ensure admin is logged in
@@ -19,8 +19,8 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Overview</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
     <header>

@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // Database connection
+include '../db.php'; // Database connection
 
 $user_id = $_GET['id']; // Get user ID from query string
 
